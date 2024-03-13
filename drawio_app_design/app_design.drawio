@@ -1,0 +1,19 @@
+<mxfile host="app.diagrams.net" modified="2024-02-22T16:33:01.659Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="t12umoDuxMM0lm6Ph2Mm" version="23.1.5" type="device">
+  <diagram name="Sayfa -1" id="uOWMirdnqwFk5onvOYnI">
+    <mxGraphModel dx="1050" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Fvn8p4dYtvblJcyB3hhz-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Fvn8p4dYtvblJcyB3hhz-1" target="Fvn8p4dYtvblJcyB3hhz-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Fvn8p4dYtvblJcyB3hhz-1" value="&lt;h1&gt;Services&lt;/h1&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;*NextAuth and associated parts.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;*Mongo DB operations: &lt;b&gt;DBservice&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="90" y="30" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Fvn8p4dYtvblJcyB3hhz-3" value="&lt;h1 style=&quot;font-size: 18px;&quot;&gt;DB Service&lt;/h1&gt;&lt;div&gt;&lt;ul style=&quot;font-size: 14px;&quot;&gt;&lt;li&gt;Use Mongoose&lt;/li&gt;&lt;li&gt;F: getUser(id or email)&lt;/li&gt;&lt;li&gt;F: getAllUsers() =&amp;gt; For admin page&lt;/li&gt;&lt;li&gt;&lt;strike&gt;F: isUserExists(user) =&amp;gt; Checking when registering&lt;/strike&gt;&lt;/li&gt;&lt;li&gt;F: validateUserCredentiasl(email, password)&lt;/li&gt;&lt;li&gt;F: updateUser(updateObj) =&amp;gt;For profile updating.&lt;/li&gt;&lt;li&gt;F: banUser(user) =&amp;gt; For admin&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;gradientColor=#97d077;" parent="1" vertex="1">
+          <mxGeometry x="400" y="110" width="550" height="370" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

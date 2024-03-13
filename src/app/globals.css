@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply pt-20 pb-5 px-5 max-w-6xl mx-auto;
+    @apply bg-mainBG;
+  }
+}
+
+@layer components {
+  .app-features h2 {
+    @apply text-lg font-bold;
+  }
+
+  .app-features .outer-list {
+    @apply space-y-2 list-disc ml-4;
+  }
+
+  .app-features .inner-list {
+    @apply ml-2;
+  }
+
+  .app-features h3 {
+    @apply font-semibold;
+  }
+}
