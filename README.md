@@ -20,6 +20,7 @@ First, initialize the app by running:
 npm install
 ```
 ### .env.local 
+  First create a file called '.env.local' at the projects root directory. And add following attributes to it as explained below.
 - **MONGODB_URL:** MongoDB used at app. Your connection URL to MongoDB store.
 - **NEXTAUTH_URL:** App's main URL. At development it is [http://localhost:3000](http://localhost:3000)
 - **NEXTAUTH_SECRET:** This is a random string at base64 format. You can use openssl. First you need to install openssl. And run bottom command at cmd for generating the random string.
