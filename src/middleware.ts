@@ -1,6 +1,4 @@
 import { NextRequestWithAuth, withAuth, WithAuthArgs } from 'next-auth/middleware';
-import { pages } from 'next/dist/build/templates/app-page';
-import { redirect } from 'next/navigation';
 import { NextResponse } from 'next/server';
 
 export default withAuth(
