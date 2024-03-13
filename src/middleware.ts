@@ -4,7 +4,7 @@ import { redirect } from 'next/navigation';
 import { NextResponse } from 'next/server';
 
 export default withAuth(
-    
+
     function middleware(request: NextRequestWithAuth) {   
         //Admin page authorization.     
         if (request.nextUrl.pathname.startsWith("/admin") && request.nextauth.token?.role !== "admin") {
