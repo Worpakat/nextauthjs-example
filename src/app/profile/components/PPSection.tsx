@@ -1,7 +1,10 @@
+"use client";
+
 import Image from 'next/image'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import ErrorMessage from '@/components/ErrorMessage'
 import { useSession } from 'next-auth/react'
+import { ISuccessContext, SuccessContext } from './SuccessContextWrapper';
 
 import dynamic from 'next/dynamic';
 const PPEditor = dynamic(() => import('./PPEditor'), {
@@ -23,17 +26,11 @@ const PPEditor = dynamic(() => import('./PPEditor'), {
 */
 
 
-
-
-interface IPSectionProps {
-    ppURL: string,
-    setPPURL: React.Dispatch<React.SetStateAction<string>>
-    setSuccessMessage: React.Dispatch<React.SetStateAction<string>>
-}
-
-const PPSection = ({ ppURL, setPPURL, setSuccessMessage }: IPSectionProps) => {
-
+const PPSection = ({ _ppURL }: { _ppURL: string }) => {
+    const { setSuccessMessage } = useContext(SuccessContext) as ISuccessContext;
     const [errorMessages, setErrorMessage] = useState<string[]>([]);
+
+    const [ppURL, setPPURL] = useState(_ppURL);
     const [openEditor, setOpenEditor] = useState(false);
     const [base64Picture, setBase64Picture] = useState("");
     const { data: session, update } = useSession();

@@ -36,7 +36,7 @@ export default function VerifyEmail() {
             const responseData = await response.json();
 
             if (response.ok) {
-                setNotification("Your email is verified succesfully. You can leave from this page.");
+                setNotification("Your email is verified succesfully. You can leave this page.");
                 update({ email_verified: true });
                 setIsSessionUpdated(true);
                 
