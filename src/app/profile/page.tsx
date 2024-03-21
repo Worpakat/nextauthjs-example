@@ -47,10 +47,7 @@ export default async function Profile() {
     } else if (userProfile instanceof Error) {
         console.error("An error occurred:", userProfile.message);
         throw userProfile;
-    }
-
-    console.log(userProfile);
-    
+    }    
 
     return (
         <div className="min-h-screen pt-4 pb-8 flex justify-center items-center">
